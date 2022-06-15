@@ -448,6 +448,10 @@ color: #666565;
   }
 }
 
+.bulletpoint{
+  padding-left: 18px;
+}
+
 /*----------------breadcrumbsss----------------*/
 ul.breadcrumb {
   padding: 10px 16px;
