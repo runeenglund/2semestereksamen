@@ -1,5 +1,5 @@
 body{
-  font-family: Gotham, sans-serif;
+  font-family: GothamLight, sans-serif;
   background: #FFFFFF;
 }
 
@@ -217,7 +217,7 @@ body{
 .banner{
   height: 30vh;
   color: #F7F4F4;
-  padding-top: 160px;
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -255,8 +255,8 @@ body{
 
 .cases-undertitel {
   font-size: 1.5rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /* -----------------Tops knap----------------- */
@@ -292,6 +292,7 @@ body{
   overflow: hidden;
   flex-direction: row;
   margin-top: 80px;
+  margin-bottom: 10px;
 }
 
 .footerOverskrift{
@@ -359,6 +360,11 @@ color: #666565;
   color: #666565;
   margin: 10px auto;
   display: flex;
+}
+
+.footertext a {
+
+  text-decoration: none;
 }
 
 .fa-brands{
