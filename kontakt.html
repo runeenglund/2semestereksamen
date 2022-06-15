@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <meta name="description" content="Pentia er nogle af branchens bedste til at koble forretning, experience og teknologi. Vi får dig hurtigt fra strategi til handling og sikrer dig mest mulig værdi på kortest tid. Find ud af hvordan vi sammen kan hjælpe dig med at udfolde dine ideer og løsninger.">
+      <meta charset="utf-8">
+      <title>Kontakt</title>
+      <!--Stylesheet-->
+      <link rel="stylesheet" href="../eksamensprojekt/styles/kontakt.css">
+      <link rel="stylesheet" href="../eksamensprojekt/styles/main.css">
+      <!--Javascript-->
+      <script src="../eksamensprojekt/script/kontakt.js" defer></script>
+      <script src="script/burgermenu.js" defer></script>
+    </head>
+   <body>
+     <header>
+       <div class="menu-toggle">
+         <span></span>
+         <span></span>
+         <span></span>
+       </div>
+
+       <div class="navbar">
+         <div class="logo">
+           <a href="index.html"><img src="images/pentia_logo_blue.svg" alt="logo"></a>
+         </div>
+         <div class="navright">
+           <button class="navbtn" onclick="window.location.href='kontakt.html'">Kontakt</button>
+         </div>
+         <nav class="nav">
+           <ul class="navPunkter">
+             <li class="nav-link"><a href="">Stratecution</a></li>
+             <li class="nav-link"><a href="cases.html">Cases</a></li>
+             <li class="nav-link"><a href="">Services</a></li>
+             <li class="nav-link"><a href="karriere.html">Karriere</a></li>
+             <li class="nav-link"><a href="">Nyt</a></li>
+             <li class="nav-link"><a href="">Events</a></li>
+             <li class="nav-link"><a href="">Om Pentia</a></li>
+             <li class="nav-link"><a href="kontakt.html">Kontakt</a></li>
+           </ul>
+
+         </nav>
+       </div>
+     </header>
+
+     <div class="banner">
+        <div class="pentagon1"></div>
+        <div class="pentagon2"></div>
+        <h1 class="cases-titel">Kontakt os</h1>
+        <br>
+        <p class="cases-undertitel">- og vi kontakter dig med det vons</p>
+      </div>
+
+      <button onclick="topFunction()" id="topBtn" title="Go to top">Til tops</button>
+
+      <!--Kontaktformular start-->
+    <main>
+      <div class="kontakt-sektion">
+        <div class="kontakt-form">
+          <div id="hilsen" class="kontakt-overskrift"></div>
+          <form action="#">
+            <div class="kontakt-rækker">
+               <div class="kontakt-data">
+                  <input id="fornavn" type="text" required>
+                  <div class="understreg"></div>
+                  <label for="fornavn">Fornavn</label>
+               </div>
+               <div class="kontakt-data">
+                  <input id="efternavn" type="text" required>
+                  <div class="understreg"></div>
+                  <label for="efternavn">Efternavn</label>
+               </div>
+            </div>
+             <div class="kontakt-rækker">
+                <div class="kontakt-data">
+                   <input id="din_titel" type="text" required>
+                   <div class="understreg"></div>
+                   <label for="din_titel">Din Titel</label>
+                </div>
+                <div class="kontakt-data">
+                   <input id="virksomhed" type="text" required>
+                   <div class="understreg"></div>
+                   <label for="virksomhed">Virksomhed</label>
+                </div>
+             </div>
+             <div class="kontakt-rækker">
+                <div class="kontakt-data">
+                   <input id="telefon" type="text" required>
+                   <div class="understreg"></div>
+                   <label for="telefon">Telefon</label>
+                </div>
+                <div class="kontakt-data">
+                   <div class="understreg"></div>
+                     <select id="afdeling" class="afdeling" required>
+                         <option value=""> Afdeling</option>
+                     </select>
+                </div>
+             </div>
+             <div class="kontakt-rækker">
+                <div class="kontakt-data kontakt-tekstområde">
+                   <textarea id="besked" rows="8" cols="80" required></textarea>
+                   <br />
+                   <div class="understreg"></div>
+                   <label for="besked">Skriv din besked</label>
+                   <br />
+                </div>
+             </div>
+          </form>
+       </div>
+       <input type="submit" name="send" class="send-knap" value="Send">
+     </div>
+   </main>
+      <!--Kontaktformular slut-->
+
+      <footer>
+        <div class="footer">
+          <h1 class="footerOverskrift">Lad os udfolde dit digitale potentiale</h1>
+          <button class="btn">Nyhedsbrev</button>
+          <button class="btn" onclick="window.location.href='kontakt.html'">Ring mig op</button>
+
+          <hr>
+
+          <div class="wrapper">
+            <div class="colum">
+              <div class="footertext">
+                <h2>København</h2>
+                <p>Islands Brygge 55
+                  2300 København S
+                  Danmark</p>
+                <h2>AArhus</h2>
+                <p>Skovvejen 2B
+                  8000 Aarhus C
+                  Danmark</p>
+              </div>
+            </div>
+
+            <div class="colum">
+              <div class="footertext">
+                <h2>Odense</h2>
+                <p>Edisonvej 2
+                  5000 Odense
+                  Danmark</p>
+                <h2>Malmø</h2>
+                <p>Storgatan 22a
+                  21142 Malmö
+                  Sverige</p>
+              </div>
+            </div>
+
+            <div class="colum">
+              <div class="footertext">
+                <h2>Info</h2>
+                <p>+45 70 23 33 30
+                  info@pentia.dk
+                  cvr-nr. 20868872</p>
+                <a href="kontakt.html"><p>Kontakt os</p></a>
+                <p>Privatlivspolitik</p>
+                <p>Presse</p>
+                <a href="https://www.facebook.com/Pentia_falsk-projekt-108318178556670"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/pentia-falsk-profil-til-projekt-2bb81323b/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

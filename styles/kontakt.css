@@ -1,0 +1,165 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.banner {
+  background-color: #5CBFCC;
+}
+
+.afdeling {
+  border-bottom: 2px solid #E5E2E2;
+  color: #666565;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  font-weight: 400;
+}
+
+label{
+  font-weight: 400;
+}
+
+select{
+  border: none;
+  font-size: 16px;
+  color: #666565;
+}
+
+.kontakt-sektion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.kontakt-form{
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  color: #666565;
+
+}
+.kontakt-form .kontakt-overskrift{
+  text-align: center;
+  font-size: 29px;
+  font-weight: 600;
+  color: #666565;
+}
+.kontakt-form form{
+  padding: 30px 0 0 0;
+}
+.kontakt-form form .kontakt-rækker{
+  display: flex;
+  margin: 32px 0;
+}
+form .kontakt-rækker .kontakt-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .kontakt-rækker .kontakt-tekstområde{
+  height: 70px;
+}
+.kontakt-data input,
+.kontakt-tekstområde textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.kontakt-data input:focus ~ label, .kontakt-tekstområde textarea:focus ~ label,
+.kontakt-data input:valid ~ label, .kontakt-tekstområde textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #0020BF;
+}
+.kontakt-tekstområde textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.kontakt-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.kontakt-tekstområde label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.kontakt-data .understreg{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.kontakt-data .understreg:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #0020BF;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.kontakt-data input:focus ~ .understreg:before,
+.kontakt-data input:valid ~ .understreg:before,
+.kontakt-tekstområde textarea:focus ~ .understreg:before,
+.kontakt-tekstområde textarea:valid ~ .understreg:before{
+  transform: scale(1);
+}
+
+.send-knap{
+  color: #666565;
+  position: absolute;
+  margin-top: 550px;
+  background: transparent;
+  border: solid #0020BF;
+  border-width: 2px;
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  cursor: pointer;
+  transition-property: background;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.send-knap:hover{
+  background: #0020BF;
+  color: #F7F4F4;
+}
+
+
+@media (max-width: 700px) {
+  .kontakt-form .kontakt-overskrift{
+    font-size: 30px;
+  }
+  .kontakt-form form{
+    padding: 10px 0 0 0;
+  }
+  .kontakt-form form .kontakt-rækker{
+    display: block;
+  }
+  form .kontakt-rækker .kontakt-data{
+    margin: 35px 0!important;
+  }
+
+  .send-knap{
+    margin-top: 800px;
+  }
+}

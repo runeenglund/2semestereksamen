@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elementer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <a href="styleguide.html">Knapper</a>
+    <a href="styleguide1.html" id="1">Farver</a>
+    <a href="styleguide2.html" id="2">Fonte & Ikoner</a>
+    <a href="styleguide3.html" id="3">Elementer</a>
+  </div>>
+
+  <!-- Page content -->
+  <div class="content">
+    <div class="banner">
+        <div class="pentagon1"></div>
+        <div class="pentagon2"></div>
+        <h1 class="cases-titel">Pentia</h1>
+        <br>
+        <p class="cases-undertitel">Creating digital advances</p>
+    </div>
+      
+    <br>
+    <pre><code>
+      <h1>Html kode: banner</h1>
+      &lt;div class="banner"&gt;
+          &lt;div class="pentagon1"&gt;&lt;/div&gt;
+          &lt;div class="pentagon2"&gt;&lt;/div&gt;
+          &lt;h1 class="cases-titel"&gt;Pentia&lt;/h1&gt;
+          &lt;p class="cases-undertitel"&gt;Creating digital advances&lt;/p&gt;
+      &lt;/div&gt;
+    </code></pre>
+
+
+    <pre><code>
+        <h1>Css kode: banner</h1>
+        .banner{
+        height: 30vh;
+        color: #0020BF;
+        padding-top: 160px;
+        text-align: center;
+      }
+
+      .pentagon1 {
+        position: absolute;
+        transform:rotate(-12deg) ;
+        height: 51%;
+        width: 30%;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        background: #f7f4f42a;
+        margin-left: auto;
+        margin-right: auto;
+        left: -62%;
+        right: 0;
+        bottom: 50%;
+      }
+
+      .pentagon2{
+        position: absolute;
+        transform:rotate(9deg) ;
+        height: 51%;
+        width: 30%;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        background: #f7f4f42a;
+        margin-left: auto;
+        margin-right: auto;
+        left: 60%;
+        right: 0;
+        bottom: 25%;
+      }
+
+      .cases-titel {
+        font-size: 3.5rem;
+      }
+
+      .cases-undertitel {
+        font-size: 1.5rem;
+      }
+    </code></pre>
+
+
+
+
+
+    <div class="cases-baggrund">
+
+        <div class="cases-tekst">
+          <h2 style="font-size: 30px" style="color:#A6A4A4;">Cases</h2>
+          <br>
+          <h3>Hos os kan vi tilbyder alt inden for app- og web-udvikling. <br> Lad os hjælpe dig med at finde den perfekte løsning.</h3>
+        </div>
+      <section class="cases-section">
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="..\eksamensprojekt\images\img-galleri\img4.jpg">
+              <img src="../images/img-galleri/bil.WebP" alt="Cinque Terre" width="600" height="600">
+            </a>
+            <div class="desc">KIA</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="..\eksamensprojekt\images\img-galleri\img6.jpg">
+              <img class="index-image-boks upside-down" src="../images/img-galleri/bygning.WebP" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">Molio</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="..\eksamensprojekt\images\img-galleri\img5.jpg">
+              <img src="../images/img-galleri/vindmoelle.WebP" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc">LM Wind Power</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+  
+
+    <pre><code>
+      <h1>Html kode: pentagon cases</h1>
+
+      &lt;div class="cases-tekst">
+          &lt;h2 style="font-size: 30px" style="color:#A6A4A4;">Cases &lt;/h2>
+          &lt;br>
+          &lt;h3>Hos os kan vi tilbyder alt inden for app- og web-udvikling.  &lt;br> Lad os hjælpe dig med at finde den perfekte løsning. &lt;/h3>
+      &lt;/div>
+      &lt;div class="responsive">
+          &lt;div class="gallery">
+            &lt;a target="_blank" href="..\eksamensprojekt\images\img-galleri\img4.jpg">
+              &lt;img src="../images/img-galleri/bil.png" alt="Cinque Terre" width="600" height="600">
+            &lt;/a>
+            &lt;div class="desc">KIA</div>
+          &lt;/div>
+      &lt;/div>
+    </code></pre>
+
+    <pre class="pre"><code>
+      <h1>Css kode: pentagon cases</h1>
+
+      .cases-baggrund{
+        background-color: #f1f1f1;
+        margin: 50px 120px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 40px;
+      }
+
+      .cases-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        box-sizing: border-box;
+      }
+
+
+      div.gallery {
+      padding-bottom: 60px;
+      padding-top: 50px;
+      }
+
+      div.gallery:hover {
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        font-weight: 600;
+        color: #666565;
+      }
+
+      .responsive {
+        float: left;
+        width: 24.99999%;
+      }
+    </code></pre>
+  </div>
+
+
+      
+</body>
+</html>

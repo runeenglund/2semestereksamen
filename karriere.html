@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karriere</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/karriere.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script src="script/burgermenu.js" defer></script>
+    <script src="script/karriere.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/pentia_logo_blue.svg" alt="logo"></a>
+      </div>
+      <div class="navright">
+        <button class="navbtn" onclick="window.location.href='kontakt.html'">Kontakt</button>
+      </div>
+      <nav class="nav">
+        <ul class="navPunkter">
+          <li class="nav-link"><a href="">Stratecution</a></li>
+          <li class="nav-link"><a href="cases.html">Cases</a></li>
+          <li class="nav-link"><a href="">Services</a></li>
+          <li class="nav-link"><a href="karriere.html">Karriere</a></li>
+          <li class="nav-link"><a href="">Nyt</a></li>
+          <li class="nav-link"><a href="">Events</a></li>
+          <li class="nav-link"><a href="">Om Pentia</a></li>
+          <li class="nav-link"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="pentagon1"></div>
+    <div class="pentagon2"></div>
+    <h1 class="cases-titel">Karriere</h1>
+    <br>
+    <p class="cases-undertitel">Du finder ikke lige så gode kollegaer andre steder</p>
+  </div>
+
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Til tops</button>
+
+  <div class="imgboxtop">
+    <img src="../eksamensprojekt/images/karriere/pentia_pentagon.png" alt="Pentia pentagon">
+  </div>
+
+  <p class="karriereUndertekst">Vil du gerne dele din digitale begejstring med en gruppe innovative udviklere, kreative designere og strategiske tænkere? Et job hos os giver dig mulighed for at udleve dine faglige ambitioner samtidig med, at der er plads til familie, venner og fritid. Og så skal du jo selvfølgelig bare have det sjovt!</p>
+
+
+  <div class="dropdown">
+    <button onclick="lokationDrop()" class="dropdownbtn">Lokation <i class="fa-solid fa-angle-down"></i></button>
+    <div id="lokation" class="dropdown-content">
+      <h3 onclick="filterSelection('all')">Alle</h3>
+      <h3 onclick="filterSelection('aarhus')">Aarhus</h3>
+      <h3 onclick="filterSelection('copenhagen')">København</h3>
+      <h3 onclick="filterSelection('odense')">Odense</h3>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button onclick="kompetencerDrop()" class="dropdownbtn">Kompetencer <i class="fa-solid fa-angle-down"></i></button>
+    <div id="kompetencer" class="dropdown-content">
+      <h3 onclick="filterSelection('all')">Alle</h3>
+      <h3 onclick="filterSelection('backend')">Backend</h3>
+      <h3 onclick="filterSelection('frontend')">Frontend</h3>
+      <h3 onclick="filterSelection('projektledere')">Projektledere</h3>
+      <h3 onclick="filterSelection('andet')">Andet</h3>
+    </div>
+  </div>
+
+  <main>
+    <section class="karriereContainer">
+      <div class="karriereContent">
+        <div class="filter karrierebox1 copenhagen projektledere">
+          <div class="imgbox1">
+            <img class="karriereimg1" src="../eksamensprojekt/images/karriere/leader.png" alt="Leadership">
+          </div>
+          <div class="karriereText1">
+            <h3>Client Director, København</h3>
+            <p>Vil du være med til at få virksomheder, organisationer og offentlige myndigheder til at realisere deres strategier gennem digitale produkter og services?</p>
+            <button class="karrierebtn">Læs mere</button>
+          </div>
+        </div>
+
+        <div class="filter karrierebox2 odense backend">
+          <div class="imgbox2">
+            <img class="karriereimg2" src="../eksamensprojekt/images/karriere/stormtrooper.png" alt="Stormtrooper rækker ud efter lampe">
+          </div>
+          <div class="karriereText2">
+            <h3>Awesome React Native Udvikler, Odense</h3>
+            <p>Vil du være med til at udvikle AWESOME apps og software?</p>
+            <button class="karrierebtn" onclick="window.location.href='underkarriere.html'">Læs mere</button>
+
+          </div>
+        </div>
+
+        <div class="filter karrierebox1 aarhus copenhagen frontend">
+          <div class="imgbox1">
+            <img class="karriereimg1" src="../eksamensprojekt/images/karriere/stormtrooper2.png" alt="Stormtrooper billede">
+          </div>
+          <div class="karriereText1">
+            <h3>Frontend Konsulent, København/Århus</h3>
+            <p>Vi søger dygtige Frontend Konsulenter.</p>
+            <button class="karrierebtn">Læs mere</button>
+          </div>
+        </div>
+
+        <div class="filter karrierebox2 aarhus copenhagen frontend">
+          <div class="imgbox2">
+            <img class="karriereimg2" src="../eksamensprojekt/images/karriere/konsulent.png" alt="3 personer om 1 computer">
+          </div>
+          <div class="karriereText2">
+            <h3>Senior UX Designer Frontend Konsulent, København/Århus</h3>
+            <p>Vil du hjælpe virksomheder og organisationer med at overvinde deres største forretningsudfordringer?</p>
+            <button class="karrierebtn">Læs mere</button>
+          </div>
+        </div>
+
+        <div class="filter karrierebox1 odense backend">
+          <div class="imgbox1">
+            <img class="karriereimg1" src="../eksamensprojekt/images/karriere/code.png" alt="Kode linjer">
+          </div>
+          <div class="karriereText1">
+            <h3>Awesome Ruby on Rails-udvikler, Odense</h3>
+            <p>Vil du være med til at at udvikle og vedligeholde et system for en af vores kunder samt vores eget SAAS produkt?</p>
+            <button class="karrierebtn">Læs mere</button>
+          </div>
+        </div>
+
+        <div class="filter karrierebox2 odense andet">
+          <div class="imgbox2">
+            <img class="karriereimg2" src="../eksamensprojekt/images/karriere/praktikant.png" alt="Er du vores nye praktikant?">
+          </div>
+          <div class="karriereText2">
+            <h3>Praktikant i Pentia, Odense</h3>
+            <p>Drømmer du om en karriere inden for software som app-udvikler, web-udvikler, designer, konceptudvikler, projektleder eller måske mere humanistiske områder, såsom kommunikation og HR? </p>
+            <button class="karrierebtn">Læs mere</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="karriererow">
+      <div class="karrierecolumn">
+        <h2 class="karriereby">København</h2>
+        <p>Pentia er en arbejdsplads, hvor alle er i øjenhøjde, hvor alle bakker op om hinanden, og hvor ingen bliver overladt til sig selv. Det er en arbejdsplads, hvor glæden ved at drille hinanden, også lederne, måske især lederne, aldrig kammer over i mobning.</p>
+      </div>
+      <div class="karrierecolumn">
+        <h2 class="karriereby">Aarhus</h2>
+        <p>Vi går op i at have det sjovt. Sjov for os betyder både faglige udfordringer, plads til familieliv og fritid, gode kollegaer samt ikke mindst en flad organisation bygget på åbenhed og tillid. Det giver en sjov arbejdsplads, glade kunder og et kvalitetsprodukt.</p>
+      </div>
+      <div class="karrierecolumnlast">
+        <h2 class="karriereby">Odense</h2>
+        <p>Vi er en flok ambitiøse nørder, drevet af vores passion for det vi laver, og vi tror på, at medindflydelse giver resultater.
+          Vi arbejder agilt i dynamiske teams, der sammensættes specifikt til hvert enkelt projekt.
+          Vores viden- og kompetenceudvikling drives i samspil med medarbejdernes egne initiativer.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <h1 class="footerOverskrift">Lad os udfolde dit digitale potentiale</h1>
+      <button class="btn">Nyhedsbrev</button>
+      <button class="btn" onclick="window.location.href='kontakt.html'">Ring mig op</button>
+
+      <hr>
+
+      <div class="wrapper">
+        <div class="colum">
+          <div class="footertext">
+            <h2>København</h2>
+            <p>Islands Brygge 55
+              2300 København S
+              Danmark</p>
+            <h2>AArhus</h2>
+            <p>Skovvejen 2B
+              8000 Aarhus C
+              Danmark</p>
+          </div>
+        </div>
+
+        <div class="colum">
+          <div class="footertext">
+            <h2>Odense</h2>
+            <p>Edisonvej 2
+              5000 Odense
+              Danmark</p>
+            <h2>Malmø</h2>
+            <p>Storgatan 22a
+              21142 Malmö
+              Sverige</p>
+          </div>
+        </div>
+
+        <div class="colum">
+          <div class="footertext">
+            <h2>Info</h2>
+            <p>+45 70 23 33 30
+              info@pentia.dk
+              cvr-nr. 20868872</p>
+            <a href="kontakt.html"><p>Kontakt os</p></a>
+            <p>Privatlivspolitik</p>
+            <p>Presse</p>
+            <a href="https://www.facebook.com/Pentia_falsk-projekt-108318178556670"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/pentia-falsk-profil-til-projekt-2bb81323b/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
